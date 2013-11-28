@@ -1,0 +1,53 @@
+{
+  "name": "grunt-snockets",
+  "description": "Snockets for grunt.js",
+  "version": "0.1.5",
+  "homepage": "https://github.com/umurgdk/grunt-snockets",
+  "author": {
+    "name": "Umur Gedik",
+    "email": "umurgdk@gmail.com",
+    "url": "http://www.umurgedik.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/umurgdk/grunt-snockets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umurgdk/grunt-snockets/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/umurgdk/grunt-snockets/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": {
+    "grunt-snockets": "bin/grunt-snockets"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "snockets": ""
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-clean": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "readme": "# grunt-snockets\n\n[Snockets](https://github.com/TrevorBurnham/snockets) for grunt.js\n\n## Getting Started\nInstall this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-snockets`\n\nThen add this line to your project's `grunt.js` gruntfile:\n\n```javascript\ngrunt.loadNpmTasks('grunt-snockets');\n```\n\n[grunt]: http://gruntjs.com/\n[getting_started]: https://github.com/gruntjs/grunt/wiki\n\n## Documentation (Basic Usage)\n**coffee/components/ctabs.coffee**\n```coffeescript\nclass CTabs\n\tconstructor: (tabs) ->\n\t\ttabs.each (k, v) ->\n\t\t\tconsole.log k, v\n```\n\n**coffee/app.coffee**\n```coffeescript\n#= require_tree components\n$ ->\n\tconsole.log 'Hello my friend ^^'\n```\n\n**grunt conifg**\n```javascript\ngrunt.initConfig({\n\tsnockets: {\n\t\tcompile: {\n\t\t\tsrc: 'coffee/app.coffee',\n\t\t\tdest: 'public/js/app.js'\n\t\t}\n\t}\n})\n```\n\nFinally **public/js/app.js** become:\n```javascript\n(function() {\n  var CTabs;\n\n  CTabs = (function() {\n\n    function CTabs(tabs) {\n      tabs.each(function(k, v) {\n        return console.log(k, v);\n      });\n    }\n\n    return CTabs;\n\n  })();\n\n}).call(this);\n\n(function() {\n\n  $(function() {\n    return console.log('Hello my friend ^^');\n  });\n\n}).call(this);\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].\n\n## Release History\n_(Nothing yet)_\n\n## License\nCopyright (c) 2013 Umur Gedik  \nLicensed under the MIT license.\n",
+  "readmeFilename": "README.md",
+  "_id": "grunt-snockets@0.1.5",
+  "dist": {
+    "shasum": "44d71e8e943bf34b152516e66a23362ba8fa818e"
+  },
+  "_resolved": "git://github.com/umurgdk/grunt-snockets.git#cf529db24c1441e2e3749f65311f5aa2c28628a8",
+  "_from": "grunt-snockets@git://github.com/umurgdk/grunt-snockets.git"
+}
