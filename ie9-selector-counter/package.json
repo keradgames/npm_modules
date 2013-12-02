@@ -1,0 +1,39 @@
+{
+  "name": "ie9-selector-counter",
+  "version": "0.0.4",
+  "description": "CSS selector counter as seen by IE9",
+  "main": "./lib/counter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xzyfer/ie9-selector-counter.git"
+  },
+  "keywords": [
+    "css",
+    "IE",
+    "IE9"
+  ],
+  "author": {
+    "name": "xzyfer"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "a779a50ece918c50e3918730b20cf862e580c197",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.3.3",
+    "grunt-contrib-connect": "~0.3.0"
+  },
+  "readme": "ie9-selector-counter\n====================\n\nA simple script that counts the number of css selectors in a single file as seen by IE9 to aid developers with IE9's 4096 selector per file limit\n",
+  "bugs": {
+    "url": "https://github.com/xzyfer/ie9-selector-counter/issues"
+  },
+  "_id": "ie9-selector-counter@0.0.4",
+  "dist": {
+    "shasum": "e317ca0042196e9c1df7ecfee4515782cc1d1445"
+  },
+  "_from": "ie9-selector-counter@0.0.4",
+  "_resolved": "https://registry.npmjs.org/ie9-selector-counter/-/ie9-selector-counter-0.0.4.tgz"
+}
